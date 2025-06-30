@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { Formik, Form } from "formik";
+import { Formik, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 import Button from "@/components/ui/atom/Button";
@@ -58,8 +58,11 @@ export default function AuthPage() {
                             onChange={handleChange}
                             onBlur={handleBlur}
                             error={touched.phone ? errors.phone : ""}
-                            required
                         />
+
+                        <div className={styles.error}>
+                            <ErrorMessage name="phone" component="div" />
+                        </div>
 
                         <Button type="submit" disabled={isSubmitting} className={styles.loginBtn}>
                             {isSubmitting ? "در حال ورود..." : "ورود"}
