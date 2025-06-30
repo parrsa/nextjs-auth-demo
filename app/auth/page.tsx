@@ -46,7 +46,7 @@ export default function AuthPage() {
                 {({ isSubmitting, handleChange, handleBlur, values, errors, touched }) => (
                     <Form className={styles.form}>
                         <h1 className={styles.title}>سامانه احراز هویت</h1>
-                        <p className={styles.description}>این تسک برای شرکت XYZ طراحی شده است.</p>
+                        <p className={styles.description}>این تسک برای شرکت دکاموند طراحی شده است.</p>
 
                         <Input
                             id="phone"
