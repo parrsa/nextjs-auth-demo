@@ -1,0 +1,36 @@
+.inputWrapper {
+    margin-bottom: 1.2rem;
+    text-align: right;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #444;
+    font-weight: 600;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: 1.5px solid #ccc;
+    border-radius: 0.6rem;
+    outline-offset: 2px;
+    transition: border-color 0.3s ease;
+  
+    &:focus {
+      border-color: #4a90e2;
+    }
+  }
+  
+  .errorInput {
+    border-color: #d93025;
+  }
+  
+  .errorText {
+    color: #d93025;
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+  }
+  
